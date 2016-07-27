@@ -486,6 +486,16 @@ like wrappers etc.
   clear: both;
 }
 
+.row {
+  margin-bottom: 3em;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /******************************************************************
 STYLESHEET: HEADER
 
@@ -507,7 +517,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #272b2f;
   background-color: #fff;
   margin: 0;
@@ -521,12 +531,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #4078c0;
+  background: #2C3B4E;
   text-shadow: none;
 }
 
 ::selection {
-  background: #4078c0;
+  background: #2C3B4E;
   text-shadow: none;
 }
 
@@ -564,33 +574,78 @@ STYLESHEET: BOX
 ******************************************************************/
 .sites {
   font-size: 1rem;
-  width: 30%;
-  margin-right: 5%;
-  padding: 0 1em;
+  width: 32%;
+  margin-right: 2%;
   float: left;
-  border: 1px solid #E5E5E5;
-  border-radius: 2px;
+  transition: all 0.1s ease-in;
+}
+
+.sites--c1 {
+  background-color: rgba(44, 59, 78, 0.1);
+}
+
+.sites--c2 {
+  background-color: rgba(214, 51, 66, 0.1);
+}
+
+.sites--c3 {
+  background-color: rgba(34, 206, 208, 0.1);
+}
+
+.sites--c4 {
+  background-color: rgba(231, 204, 58, 0.1);
+}
+
+.sites--c5 {
+  background-color: rgba(34, 184, 108, 0.1);
+}
+
+.sites--c6 {
+  background-color: rgba(150, 74, 185, 0.1);
 }
 
 .sites-title {
   font-size: 1rem;
-  color: #666;
-  border-bottom: 1px solid #EAEDED;
+  color: #fff;
   background-color: #F5F5F5;
-  margin: 0 -1em 0 -1em;
-  padding: 1em;
+  margin: 0;
+  padding: 1.3em 2em;
+  cursor: default;
+}
+
+.sites-title--c1 {
+  background-color: #2C3B4E;
+}
+
+.sites-title--c2 {
+  background-color: #D63342;
+}
+
+.sites-title--c3 {
+  background-color: #22CED0;
+}
+
+.sites-title--c4 {
+  background-color: #E7CC3A;
+}
+
+.sites-title--c5 {
+  background-color: #22B86C;
+}
+
+.sites-title--c6 {
+  background-color: #964AB9;
 }
 
 .sites-items {
   list-style: none;
-  padding: 0;
+  padding: 1em 0;
   margin: 0;
 }
 
 .sites-item {
   display: block;
-  font-size: 1rem;
-  border-bottom: 1px solid #EAEDED;
+  font-size: 0.9rem;
 }
 
 .sites-item:last-child {
@@ -598,21 +653,15 @@ STYLESHEET: BOX
 }
 
 .sites-link {
-  display: inline-block;
-  padding: 1.5em 0;
+  display: block;
+  padding: 0.7em 2.25em;
   text-decoration: none;
-  color: #666;
+  color: #405466;
 }
 
 .sites-link:hover {
-  color: #4078c0;
-}
-
-.sites-link-desc {
-  color: #CCC;
-  display: inline-block;
-  font-size: 0.8rem;
-  margin-top: 0.3em;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /******************************************************************

@@ -16,10 +16,15 @@ $grey:         #EAEDED;
 $grey_light:   #E5E5E5;
 $grey_lighter: #F5F5F5;
 $grey_dark:    #CCC;
-$grey_darker:  #666;
+$grey_darker:  #405466;
 $white:        #fff;
 
-$blue: #4078c0;
+$blue:    #2C3B4E;
+$red:     #D63342;
+$green:   #22B86C;
+$yellow:  #E7CC3A;
+$cyan:    #22CED0;
+$purple:  #964AB9;
 
 $c_dark:   $black;
 $c_medium: $grey;
@@ -30,7 +35,7 @@ $c_accent: $blue;
 /******************************************************************
 FONTS
 ******************************************************************/
-$sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+$sans-serif: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
 $serif:      'Merriweather', 'Times New Roman', serif;
 
 $f_base:    $sans-serif;
