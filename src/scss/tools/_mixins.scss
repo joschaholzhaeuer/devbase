@@ -1,0 +1,122 @@
+/******************************************************************
+STYLESHEET: MIXINS
+
+    > BREAKPOINTS
+    > KEYFRAMES
+    > HORIZONTALLY_CENTER_BLOCK_ELEMENTS
+    > HORIZONTALLY_AND_VERTICALLY_CENTER_BLOCK_ELEMENTS
+    > VERTICALLY_CENTER_BLOCK_ELEMENTS_KNOWN_HEIGHT
+    > VERTICALLY_CENTER_BLOCK_ELEMENTS_UNKNOWN_HEIGHT
+    > CLEARFIX
+
+******************************************************************/
+
+
+/******************************************************************
+BREAKPOINTS
+--> @include medium {...}
+******************************************************************/
+
+@mixin small {
+    @media only screen and (min-width: #{$w-small}) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media only screen and (min-width: #{$w-medium}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media only screen and (min-width: #{$w-large}) {
+        @content;
+    }
+}
+
+
+
+/******************************************************************
+KEYFRAMES
+--> @include keyframes($name) {...}
+******************************************************************/
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+
+
+/******************************************************************
+HORIZONTALLY_CENTER_BLOCK_ELEMENTS
+--> @include center-block;
+******************************************************************/
+
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/******************************************************************
+HORIZONTALLY_AND_VERTICALLY_CENTER_BLOCK_ELEMENTS
+--> @include center-both;
+******************************************************************/
+
+@mixin center-both {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+}
+
+
+
+/******************************************************************
+VERTICALLY_CENTER_BLOCK_ELEMENTS_KNOWN_HEIGHT
+--> @include center-h(40px);
+******************************************************************/
+
+@mixin center-h($height) {
+    position: absolute;
+    top: 50%;
+    height: $height;
+    margin-top: -($height / 2);
+}
+
+
+
+/******************************************************************
+VERTICALLY_CENTER_BLOCK_ELEMENTS_UNKNOWN_HEIGHT
+--> @include center-h-unknown;
+******************************************************************/
+
+@mixin center-h-unknown {
+    position: relative;
+    top: 50%;
+    @include prefix(transform, translateY(-50%), 'webkit' 'ms');
+}
+
+
+
+/******************************************************************
+CLEARFIX
+--> @include clearfix;
+******************************************************************/
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

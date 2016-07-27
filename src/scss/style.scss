@@ -1,0 +1,28 @@
+/******************************************************************
+STYLESHEET: STYLE
+
+This is the place where all scss files get imported.
+******************************************************************/
+
+// Includes
+@import "includes/normalize";
+
+// Settings
+@import "settings/variables";
+
+// Tools
+@import "tools/mixins";
+
+// Layout
+@import "layout/content";
+@import "layout/header";
+@import "layout/footer";
+
+// Defaults
+@import "base/defaults";
+
+// Modules
+@import "modules/box";
+
+// Helpers
+@import "base/helpers";

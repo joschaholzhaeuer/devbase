@@ -1,0 +1,47 @@
+/******************************************************************
+STYLESHEET: VARIABLES
+
+    > COLORS
+    > FONTS
+    > BREAKPOINTS
+
+This is the place for all variables.
+******************************************************************/
+
+/******************************************************************
+COLORS
+******************************************************************/
+$black:        #272b2f;
+$grey:         #EAEDED;
+$grey_light:   #E5E5E5;
+$grey_lighter: #F5F5F5;
+$grey_dark:    #CCC;
+$grey_darker:  #666;
+$white:        #fff;
+
+$blue: #4078c0;
+
+$c_dark:   $black;
+$c_medium: $grey;
+$c_light:  $white;
+$c_accent: $blue;
+
+
+/******************************************************************
+FONTS
+******************************************************************/
+$sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+$serif:      'Merriweather', 'Times New Roman', serif;
+
+$f_base:    $sans-serif;
+$f_heading: $sans-serif;
+$f_link:    $serif;
+$f_text:    $sans-serif;
+
+
+/******************************************************************
+BREAKPOINTS
+******************************************************************/
+$w_small:  681px;
+$w_medium: 961px;
+$w_large:  1361px;

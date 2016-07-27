@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Devbase",
+  "description": "This replaces the new tab with a custom page designed for web developers",
+  "version": "1.0",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Devbase"
+  },
+  "permissions": [
+    "bookmarks"
+  ]
+  // "background": {
+  //   "persistent": false,
+  //   "scripts": ["js/bg.js"]
+  // }
+}

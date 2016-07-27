@@ -1,0 +1,25 @@
+/******************************************************************
+STYLESHEET: CONTENT
+
+This file contains all the base styles for the content area,
+like wrappers etc.
+******************************************************************/
+
+.wrapper-inner {
+    width: 100%;
+    min-width: 650px;
+    max-width: 1150px;
+    margin: 4em auto;
+    position: relative;
+    padding: 0 1em;
+
+    @include medium {
+        padding: 0 4em;
+    }
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
