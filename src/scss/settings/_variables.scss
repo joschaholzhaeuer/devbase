@@ -11,11 +11,11 @@ This is the place for all variables.
 /******************************************************************
 COLORS
 ******************************************************************/
-$black:        #272b2f;
+$black:        #2C3640;
 $grey:         #EAEDED;
 $grey_light:   #E5E5E5;
 $grey_lighter: #F5F5F5;
-$grey_dark:    #CCC;
+$grey_dark:    #92A6B8;
 $grey_darker:  #405466;
 $white:        #fff;
 
@@ -23,8 +23,21 @@ $blue:    #2C3B4E;
 $red:     #D63342;
 $green:   #22B86C;
 $yellow:  #E7CC3A;
-$cyan:    #22CED0;
-$purple:  #964AB9;
+$cyan:    #29BFC8;
+$purple:  #A338CB;
+$blue_light: #2C7AD2;
+$orange:  #E76F39;
+$leaf:    #4A9950;
+
+$c_1:  $blue;
+$c_2:  $red;
+$c_3:  $cyan;
+$c_4:  $yellow;
+$c_5:  $green;
+$c_6:  $purple;
+$c_7:  $blue_light;
+$c_8:  $orange;
+$c_9:  $grey_dark;
 
 $c_dark:   $black;
 $c_medium: $grey;

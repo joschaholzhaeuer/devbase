@@ -9,7 +9,7 @@ like wrappers etc.
     width: 100%;
     min-width: 650px;
     max-width: 1150px;
-    margin: 4em auto;
+    margin: 5em auto 0 auto;
     position: relative;
     padding: 0 1em;
 
@@ -32,4 +32,15 @@ like wrappers etc.
         display: table;
         clear: both;
     }
+
+    // &-heading {
+    //     font-size: 1.2rem;
+    //     font-weight: bold;
+    //     text-transform: uppercase;
+    //     padding: 1em 1.7em;
+    //     margin-bottom: 1.5em;
+    //     color: $grey_dark;
+    //     background-color: $grey;
+    //     box-shadow: 0 0 10px -1px rgba($c_dark, 0.1);
+    // }
 }

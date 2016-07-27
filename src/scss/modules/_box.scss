@@ -10,76 +10,66 @@ STYLESHEET: BOX
     // padding: 0 1.5em;
     float: left;
     transition: all 0.1s ease-in;
-    // box-shadow: 0 0 10px -1px rgba($c_dark, 0.2);
+    background-color: $c_light;
+    box-shadow: 0 0 10px -1px rgba($c_dark, 0.1);
 
-    &--c1 {
-        background-color: rgba($blue, 0.1);
-    }
-
-    &--c2 {
-        background-color: rgba($red, 0.1);
-    }
-
-    &--c3 {
-        background-color: rgba($cyan, 0.1);
-    }
-
-    &--c4 {
-        background-color: rgba($yellow, 0.1);
-    }
-
-    &--c5 {
-        background-color: rgba($green, 0.1);
-    }
-
-    &--c6 {
-        background-color: rgba($purple, 0.1);
+    &:hover {
+        box-shadow: 0 0 15px -1px rgba($c_dark, 0.3);
     }
 
     &-title {
         font-size: 1rem;
         color: $c_light;
-        // border-bottom: 1px solid $grey;
-        background-color: $grey_lighter;
         margin: 0;
         padding: 1.3em 2em;
         cursor: default;
 
         &--c1 {
-            background-color: $blue;
+            background-color: $c_1;
         }
 
         &--c2 {
-            background-color: $red;
+            background-color: $c_2;
         }
 
         &--c3 {
-            background-color: $cyan;
+            background-color: $c_3;
         }
 
         &--c4 {
-            background-color: $yellow;
+            background-color: $c_4;
         }
 
         &--c5 {
-            background-color: $green;
+            background-color: $c_5;
         }
 
         &--c6 {
-            background-color: $purple;
+            background-color: $c_6;
+        }
+
+        &--c7 {
+            background-color: $c_7;
+        }
+
+        &--c8 {
+            background-color: $c_8;
+        }
+
+        &--c9 {
+            background-color: $c_9;
         }
     }
 
     &-items {
         list-style: none;
-        padding: 1em 0;
+        padding: 1.5em 0;
         margin: 0;
     }
 
     &-item {
         display: block;
         font-size: 0.9rem;
-        // border-bottom: 1px solid $grey;
 
         &:last-child {
             border-bottom: 0;
@@ -88,24 +78,14 @@ STYLESHEET: BOX
 
     &-link {
         display: block;
-        padding: 0.7em 2.25em;
+        padding: 0.7em 2.2em;
         text-decoration: none;
-        color: $grey_darker;
-        // transition: all 0.05s ease-in;
-        // font-weight: bold;
+        color: $grey_dark;
+        transition: all 0.05s ease-in;
+        font-weight: bold;
 
         &:hover {
-            font-weight: bold;
-            // text-decoration: underline;
-            background-color: rgba($c_light, 0.5);
-
-            // &::before {
-            //     content: "\02192";
-            //     display: inline-block;
-            //     width: 20px;
-            //     height: 20px;
-            //     margin-right: 5px;
-            // }
+            color: $c_dark;
         }
     }
 }

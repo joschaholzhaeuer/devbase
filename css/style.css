@@ -469,7 +469,7 @@ like wrappers etc.
   width: 100%;
   min-width: 650px;
   max-width: 1150px;
-  margin: 4em auto;
+  margin: 5em auto 0 auto;
   position: relative;
   padding: 0 1em;
 }
@@ -518,8 +518,8 @@ html {
 
 body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  color: #272b2f;
-  background-color: #fff;
+  color: #2C3640;
+  background-color: rgba(245, 245, 245, 0.3);
   margin: 0;
   text-align: left;
 }
@@ -578,36 +578,17 @@ STYLESHEET: BOX
   margin-right: 2%;
   float: left;
   transition: all 0.1s ease-in;
+  background-color: #fff;
+  box-shadow: 0 0 10px -1px rgba(44, 54, 64, 0.1);
 }
 
-.sites--c1 {
-  background-color: rgba(44, 59, 78, 0.1);
-}
-
-.sites--c2 {
-  background-color: rgba(214, 51, 66, 0.1);
-}
-
-.sites--c3 {
-  background-color: rgba(34, 206, 208, 0.1);
-}
-
-.sites--c4 {
-  background-color: rgba(231, 204, 58, 0.1);
-}
-
-.sites--c5 {
-  background-color: rgba(34, 184, 108, 0.1);
-}
-
-.sites--c6 {
-  background-color: rgba(150, 74, 185, 0.1);
+.sites:hover {
+  box-shadow: 0 0 15px -1px rgba(44, 54, 64, 0.3);
 }
 
 .sites-title {
   font-size: 1rem;
   color: #fff;
-  background-color: #F5F5F5;
   margin: 0;
   padding: 1.3em 2em;
   cursor: default;
@@ -622,7 +603,7 @@ STYLESHEET: BOX
 }
 
 .sites-title--c3 {
-  background-color: #22CED0;
+  background-color: #29BFC8;
 }
 
 .sites-title--c4 {
@@ -634,12 +615,24 @@ STYLESHEET: BOX
 }
 
 .sites-title--c6 {
-  background-color: #964AB9;
+  background-color: #A338CB;
+}
+
+.sites-title--c7 {
+  background-color: #2C7AD2;
+}
+
+.sites-title--c8 {
+  background-color: #E76F39;
+}
+
+.sites-title--c9 {
+  background-color: #92A6B8;
 }
 
 .sites-items {
   list-style: none;
-  padding: 1em 0;
+  padding: 1.5em 0;
   margin: 0;
 }
 
@@ -654,14 +647,15 @@ STYLESHEET: BOX
 
 .sites-link {
   display: block;
-  padding: 0.7em 2.25em;
+  padding: 0.7em 2.2em;
   text-decoration: none;
-  color: #405466;
+  color: #92A6B8;
+  transition: all 0.05s ease-in;
+  font-weight: bold;
 }
 
 .sites-link:hover {
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.5);
+  color: #2C3640;
 }
 
 /******************************************************************
