@@ -3,13 +3,18 @@
 
   "name": "Devbase",
   "description": "This replaces the new tab with a custom page designed for web developers",
-  "version": "1.0",
+  "version": "1.0.0",
   "incognito": "split",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+  "icons": {
+    "16":  "img/icon16.png",
+    "48":  "img/icon48.png",
+    "128": "img/icon128.png"
+  },
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "img/icon19.png",
     "default_title": "Devbase"
   },
   "permissions": [

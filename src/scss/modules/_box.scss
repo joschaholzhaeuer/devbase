@@ -7,6 +7,7 @@ STYLESHEET: BOX
     font-size: 1rem;
     width: 32%;
     margin-right: 2%;
+    margin-bottom: 2em;
     // padding: 0 1.5em;
     float: left;
     transition: all 0.1s ease-in;
@@ -23,29 +24,34 @@ STYLESHEET: BOX
         margin: 0;
         padding: 1.3em 2em;
         cursor: default;
+        background-color: $c_1;
 
-        &--c1 {
-            background-color: $c_1;
-        }
-
-        &--c2 {
+        &--c0 {
             background-color: $c_2;
         }
 
+        &--c1 {
+            background-color: $c_7;
+        }
+
+        &--c2 {
+            background-color: $c_7;
+        }
+
         &--c3 {
-            background-color: $c_3;
+            background-color: $c_7;
         }
 
         &--c4 {
-            background-color: $c_4;
+            background-color: $c_7;
         }
 
         &--c5 {
-            background-color: $c_5;
+            background-color: $c_7;
         }
 
         &--c6 {
-            background-color: $c_6;
+            background-color: $c_7;
         }
 
         &--c7 {
@@ -53,11 +59,22 @@ STYLESHEET: BOX
         }
 
         &--c8 {
-            background-color: $c_8;
+            background-color: $c_7;
         }
 
         &--c9 {
-            background-color: $c_9;
+            background-color: $c_7;
+        }
+    }
+
+    &-category {
+        padding: 0 0 0.5em 2.2em;
+        margin: 1.95em 0 0 0;
+        font-size: 0.9rem;
+        color: $grey_light;
+
+        &:first-child {
+            margin-top: 0.5em;
         }
     }
 
@@ -83,9 +100,89 @@ STYLESHEET: BOX
         color: $grey_dark;
         transition: all 0.05s ease-in;
         font-weight: bold;
+        cursor: pointer;
 
         &:hover {
             color: $c_dark;
+        }
+    }
+
+    &--full {
+        width: 100%;
+    }
+}
+
+.todo-list {
+
+    &-item {
+
+        &::before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 1em;
+            width: 22px;
+            height: 22px;
+            border: 2px solid $grey_light;
+            border-radius: 2px;
+            transition: all 0.05s ease-in;
+            color: $grey_light;
+        }
+
+        &:hover {
+            color: $grey_light;
+
+            &::before {
+                content: "\02713";
+                margin-right: 0.75em;
+                border: 2px solid $grey_light;
+                font-size: 1.2rem;
+                line-height: 0.9;
+                padding-left: 2px;
+            }
+        }
+    }
+
+    &-form {
+        padding: 2em 2em 0;
+        position: relative;
+    }
+
+    &-input {
+        display: inline-block;
+        color: $grey_dark;
+        background-color: $grey_lighter;
+        padding: 1em 4em 1em 1.5em;
+        margin: 0;
+        font-size: 0.9rem;
+        font-weight: bold;
+        // border: 2px solid $grey_lighter;
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 45px;
+    }
+
+    &-button {
+        display: inline-block;
+        position: absolute;
+        right: 2.5em;
+        top: 2.7em;
+        color: $grey_dark;
+        background-color: $grey_light;
+        padding: 0 1.2em;
+        font-size: 0.9rem;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        width: auto;
+        height: 32px;
+        border-radius: 2px;
+        transition: all 0.05s ease-in;
+
+        &:hover {
+            color: $c_light;
+            background-color: $c_1;
         }
     }
 }

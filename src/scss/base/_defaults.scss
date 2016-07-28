@@ -24,11 +24,13 @@ body {
 }
 
 ::-moz-selection {
+    color: $c_light;
     background: $c_accent;
     text-shadow: none;
 }
 
 ::selection {
+    color: $c_light;
     background: $c_accent;
     text-shadow: none;
 }
