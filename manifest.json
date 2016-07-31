@@ -13,15 +13,15 @@
     "48":  "img/icon48.png",
     "128": "img/icon128.png"
   },
-  "browser_action": {
-    "default_icon": "img/icon19.png",
-    "default_title": "Devbase"
-  },
+  // "browser_action": {
+  //   "default_icon": "img/icon19.png",
+  //   "default_title": "Devbase"
+  // },
   "permissions": [
-    "bookmarks"
+    "storage"
   ]
   // "background": {
   //   "persistent": false,
-  //   "scripts": ["js/bg.js"]
+  //   "scripts": [ "js/vendor/jquery-3.1.0.min.js", "js/bg.js" ]
   // }
 }

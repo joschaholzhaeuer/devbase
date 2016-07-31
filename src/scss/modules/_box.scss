@@ -10,7 +10,7 @@ STYLESHEET: BOX
     margin-bottom: 2em;
     // padding: 0 1.5em;
     float: left;
-    transition: all 0.1s ease-in;
+    // transition: all 0.1s ease-in;
     background-color: $c_light;
     box-shadow: 0 0 10px -1px rgba($c_dark, 0.1);
 
@@ -31,39 +31,39 @@ STYLESHEET: BOX
         }
 
         &--c1 {
-            background-color: $c_7;
+            background-color: $c_3;
         }
 
         &--c2 {
-            background-color: $c_7;
+            background-color: $c_3;
         }
 
         &--c3 {
-            background-color: $c_7;
+            background-color: $c_3;
         }
 
         &--c4 {
-            background-color: $c_7;
+            background-color: $c_4;
         }
 
         &--c5 {
-            background-color: $c_7;
+            background-color: $c_4;
         }
 
         &--c6 {
-            background-color: $c_7;
+            background-color: $c_4;
         }
 
         &--c7 {
-            background-color: $c_7;
+            background-color: $c_4;
         }
 
         &--c8 {
-            background-color: $c_7;
+            background-color: $c_4;
         }
 
         &--c9 {
-            background-color: $c_7;
+            background-color: $c_4;
         }
     }
 
@@ -170,9 +170,10 @@ STYLESHEET: BOX
         top: 2.7em;
         color: $grey_dark;
         background-color: $grey_light;
-        padding: 0 1.2em;
+        padding: 0.4em 1.2em;
         font-size: 0.9rem;
         font-weight: bold;
+        text-decoration: none;
         border: none;
         outline: none;
         width: auto;

@@ -474,7 +474,7 @@ like wrappers etc.
   padding: 0 1em;
 }
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1361px) {
   .wrapper-inner {
     padding: 0 4em;
   }
@@ -584,7 +584,6 @@ STYLESHEET: BOX
   margin-right: 2%;
   margin-bottom: 2em;
   float: left;
-  transition: all 0.1s ease-in;
   background-color: #fff;
   box-shadow: 0 0 10px -1px rgba(44, 54, 64, 0.1);
 }
@@ -607,15 +606,15 @@ STYLESHEET: BOX
 }
 
 .sites-title--c1 {
-  background-color: #268BE9;
+  background-color: #405466;
 }
 
 .sites-title--c2 {
-  background-color: #268BE9;
+  background-color: #405466;
 }
 
 .sites-title--c3 {
-  background-color: #268BE9;
+  background-color: #405466;
 }
 
 .sites-title--c4 {
@@ -738,9 +737,10 @@ STYLESHEET: BOX
   top: 2.7em;
   color: #92A6B8;
   background-color: #E5E5E5;
-  padding: 0 1.2em;
+  padding: 0.4em 1.2em;
   font-size: 0.9rem;
   font-weight: bold;
+  text-decoration: none;
   border: none;
   outline: none;
   width: auto;

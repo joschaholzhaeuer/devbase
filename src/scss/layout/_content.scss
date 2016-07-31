@@ -13,7 +13,7 @@ like wrappers etc.
     position: relative;
     padding: 0 1em;
 
-    @include medium {
+    @include large {
         padding: 0 4em;
     }
 
