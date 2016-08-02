@@ -7,14 +7,16 @@ html {
     font-size: 1em;
     line-height: 1.4;
     box-sizing: border-box;
+    height: 100%;
 }
 
 body {
     font-family: $f_base;
     color: $c_dark;
-    background-color: rgba($grey_lighter, 0.3);
+    background-color: $grey_darker;
     margin: 0;
     text-align: left;
+    height: 100%;
 }
 
 *,

@@ -138,8 +138,6 @@ $(document).ready(function() {
     });
 
 
-    // var $allTodoItems;
-
     // Remove items on check
     $(document).on( 'click', $allTodoItems, function(a) {
 

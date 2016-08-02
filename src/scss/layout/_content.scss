@@ -5,16 +5,24 @@ This file contains all the base styles for the content area,
 like wrappers etc.
 ******************************************************************/
 
+.bg {
+    background: linear-gradient( to top, rgba($c_3, 0.4), rgba($grey_dark, 0.6) ), url('../img/bg.jpg') top center no-repeat;
+    background-size: cover;
+    // background-color: $grey_lighter;
+    height: 100%;
+    transition: all 0.1s ease-in;
+}
+
 .wrapper-inner {
     width: 100%;
     min-width: 1300px;
     max-width: 1920px;
-    margin: 5em auto 0 auto;
+    margin: 0 auto;
     position: relative;
-    padding: 0 1em;
+    padding: 5em 1em 0;
 
     @include large {
-        padding: 0 4em;
+        padding: 5em 4em 0;
     }
 
     &::after {

@@ -63,7 +63,7 @@ STYLESHEET: BOX
         }
 
         &--c9 {
-            background-color: $c_4;
+            background-color: $c_2;
         }
     }
 
@@ -135,7 +135,8 @@ STYLESHEET: BOX
             &::before {
                 content: "\02713";
                 margin-right: 0.75em;
-                border: 2px solid $grey_light;
+                color: $c_2;
+                border: 2px solid $c_2;
                 font-size: 1.2rem;
                 line-height: 0.9;
                 padding-left: 2px;

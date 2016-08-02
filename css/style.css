@@ -465,18 +465,25 @@ STYLESHEET: CONTENT
 This file contains all the base styles for the content area,
 like wrappers etc.
 ******************************************************************/
+.bg {
+  background: linear-gradient(to top, rgba(64, 84, 102, 0.4), rgba(146, 166, 184, 0.6)), url("../img/bg.jpg") top center no-repeat;
+  background-size: cover;
+  height: 100%;
+  transition: all 0.1s ease-in;
+}
+
 .wrapper-inner {
   width: 100%;
   min-width: 1300px;
   max-width: 1920px;
-  margin: 5em auto 0 auto;
+  margin: 0 auto;
   position: relative;
-  padding: 0 1em;
+  padding: 5em 1em 0;
 }
 
 @media only screen and (min-width: 1361px) {
   .wrapper-inner {
-    padding: 0 4em;
+    padding: 5em 4em 0;
   }
 }
 
@@ -518,14 +525,16 @@ html {
   font-size: 1em;
   line-height: 1.4;
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #2C3640;
-  background-color: rgba(245, 245, 245, 0.3);
+  background-color: #405466;
   margin: 0;
   text-align: left;
+  height: 100%;
 }
 
 *,
@@ -638,7 +647,7 @@ STYLESHEET: BOX
 }
 
 .sites-title--c9 {
-  background-color: #268BE9;
+  background-color: #1DDD92;
 }
 
 .sites-category {
@@ -705,7 +714,8 @@ STYLESHEET: BOX
 .todo-list-item:hover::before {
   content: "\02713";
   margin-right: 0.75em;
-  border: 2px solid #E5E5E5;
+  color: #1DDD92;
+  border: 2px solid #1DDD92;
   font-size: 1.2rem;
   line-height: 0.9;
   padding-left: 2px;
