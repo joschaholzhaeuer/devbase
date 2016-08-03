@@ -466,8 +466,7 @@ This file contains all the base styles for the content area,
 like wrappers etc.
 ******************************************************************/
 .bg {
-  background: linear-gradient(to top, rgba(64, 84, 102, 0.4), rgba(146, 166, 184, 0.6)), url("../img/bg.jpg") top center no-repeat;
-  background-size: cover;
+  background-color: #29333A;
   height: 100%;
   transition: all 0.1s ease-in;
 }
@@ -526,12 +525,13 @@ html {
   line-height: 1.4;
   box-sizing: border-box;
   height: 100%;
+  background-color: #29333A;
 }
 
 body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  color: #2C3640;
-  background-color: #405466;
+  color: #FBFCFC;
+  background-color: #29333A;
   margin: 0;
   text-align: left;
   height: 100%;
@@ -544,14 +544,14 @@ body {
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: #268BE9;
+  color: #FBFCFC;
+  background: #3690E3;
   text-shadow: none;
 }
 
 ::selection {
-  color: #fff;
-  background: #268BE9;
+  color: #FBFCFC;
+  background: #3690E3;
   text-shadow: none;
 }
 
@@ -593,60 +593,71 @@ STYLESHEET: BOX
   margin-right: 2%;
   margin-bottom: 2em;
   float: left;
-  background-color: #fff;
-  box-shadow: 0 0 10px -1px rgba(44, 54, 64, 0.1);
+  background-color: #35444F;
+  box-shadow: 0 0 10px -1px rgba(41, 51, 58, 0.1);
 }
 
 .sites:hover {
-  box-shadow: 0 0 15px -1px rgba(44, 54, 64, 0.3);
+  box-shadow: 0 0 15px -1px rgba(41, 51, 58, 0.3);
 }
 
 .sites-title {
   font-size: 1rem;
-  color: #fff;
+  color: #FBFCFC;
   margin: 0;
   padding: 1.3em 2em;
   cursor: default;
-  background-color: #E73E4E;
+  color: #A83B46;
+  background-color: #E55462;
 }
 
 .sites-title--c0 {
+  color: #299C6F;
   background-color: #1DDD92;
 }
 
 .sites-title--c1 {
-  background-color: #405466;
+  color: #A9A061;
+  background-color: #fff191;
 }
 
 .sites-title--c2 {
-  background-color: #405466;
+  color: #A9A061;
+  background-color: #fff191;
 }
 
 .sites-title--c3 {
-  background-color: #405466;
+  color: #A9A061;
+  background-color: #fff191;
 }
 
 .sites-title--c4 {
-  background-color: #268BE9;
+  color: #38628A;
+  background-color: #3690E3;
 }
 
 .sites-title--c5 {
-  background-color: #268BE9;
+  color: #38628A;
+  background-color: #3690E3;
 }
 
 .sites-title--c6 {
-  background-color: #268BE9;
+  color: #38628A;
+  background-color: #3690E3;
 }
 
 .sites-title--c7 {
-  background-color: #268BE9;
+  color: #38628A;
+  background-color: #3690E3;
 }
 
 .sites-title--c8 {
-  background-color: #268BE9;
+  color: #38628A;
+  background-color: #3690E3;
 }
 
 .sites-title--c9 {
+  color: #299C6F;
   background-color: #1DDD92;
 }
 
@@ -654,7 +665,7 @@ STYLESHEET: BOX
   padding: 0 0 0.5em 2.2em;
   margin: 1.95em 0 0 0;
   font-size: 0.9rem;
-  color: #E5E5E5;
+  color: #29333A;
 }
 
 .sites-category:first-child {
@@ -678,6 +689,7 @@ STYLESHEET: BOX
 
 .sites-link {
   display: block;
+  position: relative;
   padding: 0.7em 2.2em;
   text-decoration: none;
   color: #92A6B8;
@@ -687,7 +699,7 @@ STYLESHEET: BOX
 }
 
 .sites-link:hover {
-  color: #2C3640;
+  color: #FBFCFC;
 }
 
 .sites--full {
@@ -701,14 +713,14 @@ STYLESHEET: BOX
   margin-right: 1em;
   width: 22px;
   height: 22px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #405260;
   border-radius: 2px;
   transition: all 0.05s ease-in;
-  color: #E5E5E5;
+  color: #405260;
 }
 
 .todo-list-item:hover {
-  color: #E5E5E5;
+  color: #E4E6E7;
 }
 
 .todo-list-item:hover::before {
@@ -729,7 +741,7 @@ STYLESHEET: BOX
 .todo-list-input {
   display: inline-block;
   color: #92A6B8;
-  background-color: #F5F5F5;
+  background-color: #405260;
   padding: 1em 4em 1em 1.5em;
   margin: 0;
   font-size: 0.9rem;
@@ -745,8 +757,8 @@ STYLESHEET: BOX
   position: absolute;
   right: 2.5em;
   top: 2.7em;
-  color: #92A6B8;
-  background-color: #E5E5E5;
+  color: #405260;
+  background-color: #92A6B8;
   padding: 0.4em 1.2em;
   font-size: 0.9rem;
   font-weight: bold;
@@ -760,8 +772,8 @@ STYLESHEET: BOX
 }
 
 .todo-list-button:hover {
-  color: #fff;
-  background-color: #E73E4E;
+  color: #FBFCFC;
+  background-color: #E55462;
 }
 
 /******************************************************************

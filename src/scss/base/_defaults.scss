@@ -8,12 +8,13 @@ html {
     line-height: 1.4;
     box-sizing: border-box;
     height: 100%;
+    background-color: $c_dark;
 }
 
 body {
     font-family: $f_base;
-    color: $c_dark;
-    background-color: $grey_darker;
+    color: $c_light;
+    background-color: $c_dark;
     margin: 0;
     text-align: left;
     height: 100%;

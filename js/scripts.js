@@ -47,18 +47,18 @@ $(document).ready(function() {
 
     // Store new items in array
     var storeList = function(a) {
-        chrome.storage.local.set({'reminder': a});
+        chrome.storage.local.set({'todoList': a});
     };
 
 
     // On load of the new tab, check if there are any items previously stored
-    chrome.storage.local.get('reminder', function (items) {
+    chrome.storage.local.get('todoList', function (items) {
 
         var todosPrev;
 
         // There are already to do's saved in the chrome.storage
-        if ( items.reminder ) {
-            todosPrev = items.reminder;
+        if ( items.todoList ) {
+            todosPrev = items.todoList;
 
             displayTodos(todosPrev);
 
@@ -88,16 +88,16 @@ $(document).ready(function() {
     $(document).on( 'click', $button, function() {
 
         // Add to do to array and save to storage
-        chrome.storage.local.get('reminder', function (items) {
+        chrome.storage.local.get('todoList', function (items) {
 
             var todo,
                 todos;
 
             // There are already to do's saved in the chrome.storage
-            if ( items.reminder ) {
+            if ( items.todoList ) {
 
                 todo = $(".todo-list-input").val();
-                todos = items.reminder;
+                todos = items.todoList;
 
                 // Check if input is not empty
                 if ( todo !== "" && todo !== " " ) {
@@ -142,11 +142,11 @@ $(document).ready(function() {
     $(document).on( 'click', $allTodoItems, function(a) {
 
         // Get array from chrome.storage
-        chrome.storage.local.get('reminder', function (items) {
+        chrome.storage.local.get('todoList', function (items) {
 
             // There are already to do's saved in the chrome.storage
-            if ( items.reminder ) {
-                var todos        = items.reminder,
+            if ( items.todoList ) {
+                var todos        = items.todoList,
                     $deletedItem = $(a.target),
                     selectedItem = $(a.target).attr("data-name"),
                     index        = todos.indexOf(selectedItem);
