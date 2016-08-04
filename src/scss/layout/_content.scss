@@ -8,7 +8,8 @@ like wrappers etc.
 .bg {
     // background: linear-gradient( to top, rgba($c_3, 0.4), rgba($grey_dark, 0.6) ), url('../img/bg.jpg') top center no-repeat;
     // background-size: cover;
-    background-color: $c_dark;
+    // background-color: $c_dark;
+    background-color: $grey_lighter;
     height: 100%;
     transition: all 0.1s ease-in;
 }

@@ -8,15 +8,12 @@ STYLESHEET: BOX
     width: 32%;
     margin-right: 2%;
     margin-bottom: 2em;
-    // padding: 0 1.5em;
     float: left;
-    // transition: all 0.1s ease-in;
-    background-color: $dark;
-    box-shadow: 0 0 10px -1px rgba($c_dark, 0.1);
-    // border-radius: 3px;
+    background-color: $c_light;
+    // box-shadow: 0 0 10px -1px rgba($c_dark, 0.1);
 
     &:hover {
-        box-shadow: 0 0 15px -1px rgba($c_dark, 0.3);
+        // box-shadow: 0 0 15px -1px rgba($c_dark, 0.3);
     }
 
     &-title {
@@ -24,58 +21,70 @@ STYLESHEET: BOX
         color: $c_light;
         margin: 0;
         padding: 1.3em 2em;
-        cursor: default;
         color: $c_1_dark;
         background-color: $c_1;
+        border-top: 1px solid $c_light;
+        border-left: 1px solid $c_light;
+        border-right: 1px solid $c_light;
 
         &--c0 {
             color: $c_2_dark;
             background-color: $c_2;
+            border: 1px solid rgba($c_2_dark, 0.4);
         }
 
         &--c1 {
             color: $c_3_dark;
             background-color: $c_3;
+            border: 1px solid rgba($c_3_dark, 0.2);
         }
 
         &--c2 {
             color: $c_3_dark;
             background-color: $c_3;
+            border: 1px solid rgba($c_3_dark, 0.2);
         }
 
         &--c3 {
             color: $c_3_dark;
             background-color: $c_3;
+            border: 1px solid rgba($c_3_dark, 0.2);
         }
 
         &--c4 {
             color: $c_4_dark;
             background-color: $c_4;
+            border: 1px solid rgba($c_4_dark, 0.2);
         }
 
         &--c5 {
             color: $c_4_dark;
             background-color: $c_4;
+            border: 1px solid rgba($c_4_dark, 0.2);
         }
 
         &--c6 {
             color: $c_4_dark;
             background-color: $c_4;
+            border: 1px solid rgba($c_4_dark, 0.2);
         }
 
         &--c7 {
             color: $c_4_dark;
             background-color: $c_4;
+            border: 1px solid rgba($c_4_dark, 0.2);
         }
 
         &--c8 {
             color: $c_4_dark;
             background-color: $c_4;
+            border: 1px solid rgba($c_4_dark, 0.2);
         }
 
         &--c9 {
-            color: $c_2_dark;
-            background-color: $c_2;
+            color: $c_1_dark;
+            background-color: $c_1;
+            border: 1px solid rgba($c_1_dark, 0.2);
         }
     }
 
@@ -83,7 +92,7 @@ STYLESHEET: BOX
         padding: 0 0 0.5em 2.2em;
         margin: 1.95em 0 0 0;
         font-size: 0.9rem;
-        color: $black;
+        color: $grey_light;
 
         &:first-child {
             margin-top: 0.5em;
@@ -94,6 +103,9 @@ STYLESHEET: BOX
         list-style: none;
         padding: 1.5em 0;
         margin: 0;
+        border-left: 1px solid $grey_light;
+        border-right: 1px solid $grey_light;
+        border-bottom: 1px solid $grey_light;
     }
 
     &-item {
@@ -116,7 +128,13 @@ STYLESHEET: BOX
         cursor: pointer;
 
         &:hover {
-            color: $c_light;
+            color: $grey_darker;
+        }
+
+        .fa {
+            width: 20px;
+            margin-right: 0.5em;
+            // color: $grey_light;
         }
     }
 
@@ -136,10 +154,10 @@ STYLESHEET: BOX
             margin-right: 1em;
             width: 22px;
             height: 22px;
-            border: 2px solid $grey_darker;
+            border: 2px solid $grey_light;
             border-radius: 2px;
             transition: all 0.05s ease-in;
-            color: $grey_darker;
+            color: $grey_light;
         }
 
         &:hover {
@@ -160,18 +178,20 @@ STYLESHEET: BOX
     &-form {
         padding: 2em 2em 0;
         position: relative;
+        border-left: 1px solid $grey_light;
+        border-right: 1px solid $grey_light;
     }
 
     &-input {
         display: inline-block;
         color: $grey_dark;
-        background-color: $grey_darker;
+        background-color: $grey_lighter;
         padding: 1em 4em 1em 1.5em;
         margin: 0;
         font-size: 0.9rem;
         font-weight: bold;
-        // border: 2px solid $grey_lighter;
-        border: none;
+        border: 1px solid $grey_light;
+        // border: none;
         outline: none;
         width: 100%;
         height: 45px;
@@ -180,18 +200,19 @@ STYLESHEET: BOX
     &-button {
         display: inline-block;
         position: absolute;
-        right: 2.5em;
+        right: 2.65em;
         top: 2.7em;
-        color: $grey_darker;
+        color: $grey_lighter;
         background-color: $grey_dark;
         padding: 0.4em 1.2em;
         font-size: 0.9rem;
         font-weight: bold;
         text-decoration: none;
+        // border: 1px solid rgba($grey_darker, 0.2);
         border: none;
         outline: none;
         width: auto;
-        height: 32px;
+        height: 33px;
         border-radius: 2px;
         transition: all 0.05s ease-in;
 
