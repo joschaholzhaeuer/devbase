@@ -698,13 +698,14 @@ STYLESHEET: BOX
 }
 
 .sites-link {
+  font-family: "Merriweather", "Times New Roman", serif;
+  font-weight: 300;
   display: block;
   position: relative;
   padding: 0.7em 2.2em;
   text-decoration: none;
-  color: #A0ADB7;
+  color: #98A5AF;
   transition: all 0.05s ease-in;
-  font-weight: bold;
   cursor: pointer;
 }
 
@@ -757,7 +758,7 @@ STYLESHEET: BOX
 
 .todo-list-input {
   display: inline-block;
-  color: #A0ADB7;
+  color: #98A5AF;
   background-color: #F2F4F6;
   padding: 1em 4em 1em 1.5em;
   margin: 0;
@@ -775,7 +776,7 @@ STYLESHEET: BOX
   right: 2.65em;
   top: 2.7em;
   color: #F2F4F6;
-  background-color: #A0ADB7;
+  background-color: #98A5AF;
   padding: 0.4em 1.2em;
   font-size: 0.9rem;
   font-weight: bold;

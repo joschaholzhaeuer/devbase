@@ -118,13 +118,14 @@ STYLESHEET: BOX
     }
 
     &-link {
+        font-family: $f_link;
+        font-weight: 300;
         display: block;
         position: relative;
         padding: 0.7em 2.2em;
         text-decoration: none;
         color: $grey_dark;
         transition: all 0.05s ease-in;
-        font-weight: bold;
         cursor: pointer;
 
         &:hover {
