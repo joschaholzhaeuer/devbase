@@ -1,0 +1,6 @@
+{
+    "hello": {
+        "message": "Hello, $USER$",
+        "description": "Greet the user"
+    }
+}
