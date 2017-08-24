@@ -5,86 +5,53 @@ STYLESHEET: BOX
 
 .sites {
     font-size: 1rem;
-    width: 32%;
-    margin-right: 2%;
-    margin-bottom: 2em;
-    float: left;
+    width: 100%;
+    height: 100%;
+    // border-left: 1px solid $grey_light;
+    // border-right: 1px solid $grey_light;
+    // border-bottom: 1px solid $grey_light;
     background-color: $c_light;
-    // box-shadow: 0 0 10px -1px rgba($c_dark, 0.1);
-
-    &:hover {
-        // box-shadow: 0 0 15px -1px rgba($c_dark, 0.3);
-    }
 
     &-title {
         font-size: 1rem;
+        font-weight: 700;
         color: $c_light;
         margin: 0;
         padding: 1.3em 2em;
         color: $c_1_dark;
         background-color: $c_1;
-        border-top: 1px solid $c_light;
-        border-left: 1px solid $c_light;
-        border-right: 1px solid $c_light;
-
-        &--c0 {
-            color: $c_2_dark;
-            background-color: $c_2;
-            border: 1px solid rgba($c_2_dark, 0.4);
-        }
+        // border-top: 1px solid $c_light;
+        // border-left: 1px solid $c_light;
+        // border-right: 1px solid $c_light;
 
         &--c1 {
-            color: $c_3_dark;
-            background-color: $c_3;
-            border: 1px solid rgba($c_3_dark, 0.2);
+            color: $c_2_dark;
+            background-color: $c_2;
+            // border: 1px solid rgba($c_2_dark, 0.2);
         }
 
         &--c2 {
-            color: $c_3_dark;
-            background-color: $c_3;
-            border: 1px solid rgba($c_3_dark, 0.2);
+            color: $c_1_dark;
+            background-color: $c_1;
+            // border: 1px solid rgba($c_1_dark, 0.2);
         }
 
         &--c3 {
             color: $c_3_dark;
             background-color: $c_3;
-            border: 1px solid rgba($c_3_dark, 0.2);
+            // border: 1px solid rgba($c_3_dark, 0.2);
         }
 
         &--c4 {
             color: $c_4_dark;
             background-color: $c_4;
-            border: 1px solid rgba($c_4_dark, 0.2);
+            // border: 1px solid rgba($c_4_dark, 0.2);
         }
 
         &--c5 {
-            color: $c_4_dark;
-            background-color: $c_4;
-            border: 1px solid rgba($c_4_dark, 0.2);
-        }
-
-        &--c6 {
-            color: $c_4_dark;
-            background-color: $c_4;
-            border: 1px solid rgba($c_4_dark, 0.2);
-        }
-
-        &--c7 {
-            color: $c_4_dark;
-            background-color: $c_4;
-            border: 1px solid rgba($c_4_dark, 0.2);
-        }
-
-        &--c8 {
-            color: $c_4_dark;
-            background-color: $c_4;
-            border: 1px solid rgba($c_4_dark, 0.2);
-        }
-
-        &--c9 {
-            color: $c_1_dark;
-            background-color: $c_1;
-            border: 1px solid rgba($c_1_dark, 0.2);
+            color: $c_5_dark;
+            background-color: $c_5;
+            // border: 1px solid rgba($c_4_dark, 0.2);
         }
     }
 
@@ -103,9 +70,6 @@ STYLESHEET: BOX
         list-style: none;
         padding: 1.5em 0;
         margin: 0;
-        border-left: 1px solid $grey_light;
-        border-right: 1px solid $grey_light;
-        border-bottom: 1px solid $grey_light;
     }
 
     &-item {
@@ -135,91 +99,6 @@ STYLESHEET: BOX
         .fa {
             width: 20px;
             margin-right: 0.5em;
-            // color: $grey_light;
-        }
-    }
-
-    &--full {
-        width: 100%;
-    }
-}
-
-.todo-list {
-
-    &-item {
-
-        &::before {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 1em;
-            width: 22px;
-            height: 22px;
-            border: 2px solid $grey_light;
-            border-radius: 2px;
-            transition: all 0.05s ease-in;
-            color: $grey_light;
-        }
-
-        &:hover {
-            color: $grey_light;
-
-            &::before {
-                content: "\02713";
-                margin-right: 0.75em;
-                color: $c_2;
-                border: 2px solid $c_2;
-                font-size: 1.2rem;
-                line-height: 0.9;
-                padding-left: 2px;
-            }
-        }
-    }
-
-    &-form {
-        padding: 2em 2em 0;
-        position: relative;
-        border-left: 1px solid $grey_light;
-        border-right: 1px solid $grey_light;
-    }
-
-    &-input {
-        display: inline-block;
-        color: $grey_dark;
-        background-color: $grey_lighter;
-        padding: 1em 4em 1em 1.5em;
-        margin: 0;
-        font-size: 0.9rem;
-        font-weight: bold;
-        border: 1px solid $grey_light;
-        // border: none;
-        outline: none;
-        width: 100%;
-        height: 45px;
-    }
-
-    &-button {
-        display: inline-block;
-        position: absolute;
-        right: 2.65em;
-        top: 2.7em;
-        color: $grey_lighter;
-        background-color: $grey_dark;
-        padding: 0.4em 1.2em;
-        font-size: 0.9rem;
-        font-weight: bold;
-        text-decoration: none;
-        // border: 1px solid rgba($grey_darker, 0.2);
-        border: none;
-        outline: none;
-        width: auto;
-        height: 33px;
-        border-radius: 2px;
-        transition: all 0.05s ease-in;
-
-        &:hover {
-            color: $c_light;
-            background-color: $c_1;
         }
     }
 }

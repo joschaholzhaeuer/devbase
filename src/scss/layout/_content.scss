@@ -6,43 +6,65 @@ like wrappers etc.
 ******************************************************************/
 
 .bg {
-    // background: linear-gradient( to top, rgba($c_3, 0.4), rgba($grey_dark, 0.6) ), url('../img/bg.jpg') top center no-repeat;
-    // background-size: cover;
-    // background-color: $c_dark;
-    background-color: $grey_lighter;
+    background-color: $c_bg;
     height: 100%;
     transition: all 0.1s ease-in;
 }
 
 .wrapper-inner {
-    width: 100%;
-    min-width: 1024px;
-    max-width: 1600px;
+    width: 95%;
+    max-width: 1500px;
+    height: 90%;
+    padding-top: 4em;
     margin: 0 auto;
-    position: relative;
-    padding: 5em 1em 0;
-
-    @include large {
-        padding: 5em 4em 0;
-    }
-
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+    display: grid;
+    grid-template-rows: 33.333333% 1fr 33.333333%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-flow: row;
+    grid-row-gap: 1.2em;
+    grid-column-gap: 1.2em;
 }
 
-.column {
-    position: relative;
-    float: left;
-    margin-right: 1.4%;
+.block {
+    box-shadow: 1px 1px 10px -1px rgba(0, 0, 0, 0.05);
 
-    &--short {
-        width: 24.6%;
+    &--01 {
+        grid-column: 1/2;
+        grid-row: 1/4;
     }
 
-    &--wide {
-        width: 74%;
+    &--02 {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    &--03 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    &--04 {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+
+    &--05 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    &--06 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    &--07 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    &--08 {
+        grid-column: 4/5;
+        grid-row: 3/4;
     }
 }
